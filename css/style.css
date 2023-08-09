@@ -1,0 +1,204 @@
+/*---TIPOGRAFIA---*/
+
+/*--RESET--*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----header----*/
+
+header{
+    background-color: rgb(13, 13, 13);
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    color: white;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    }
+
+    header nav ul {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+header nav ul li{
+    list-style: none;
+    font-size: 30px;
+    }
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    }
+
+
+
+/*---main---*/
+
+section img{
+    width: 0px;
+    height:0px;
+    }
+
+section h2 {
+    text-align: center;
+    color: white;
+    height: 400px;
+    background-image: url(../img/universo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.primer-parrafo {
+    color: rgb(5, 5, 5);
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    }
+
+    .ejemplos {
+        display: flex;
+        justify-content: space-around;
+    }   
+    
+    /**aca esta la parte donde modifico el texto entre las imagenes de la paginas de ejemplo**/
+    
+    .ejemplos div{
+        border: 1px solid black;
+        width: 300px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }    
+    
+    .parrafo{
+        text-align: center;
+        background-color: rgb(13, 13, 13);
+        color: rgb(255, 253, 253);
+        margin: 20px;
+    }
+
+.ejemplos div h3{
+    margin-top: 10px;
+}
+
+.ejemplos div img{
+    width: 300px;
+    height: 500px;
+    }
+
+    /***aca estan las funciones para boton de ingresar y para pagina*/
+.ejemplos div a{
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    font-size: 15px;
+    margin: 20px;
+    padding: 5px;
+    }
+/*- responsi para index--*/ 
+
+
+    @media (max-width: 350px) {
+    .ejemplos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .ejemplos div img {
+        
+        height: auto; /* Para mantener la proporción original de la imagen */
+    }
+}
+ 
+.fixed{
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+.fixed a img{
+    width: 50px;
+    height: 50px;
+}
+/*---footer---*/
+
+/* Ajuste para los iconos */
+footer {
+    display: grid; /* Establece el footer como un contenedor de cuadrícula */
+    grid-template-columns: 1fr; /* Solo una columna */
+    grid-template-rows: repeat(3, 20px); /* Crea 3 filas de 100px de altura cada una */
+    grid-gap: 30px; /* Espacio entre los elementos */
+    justify-items: center; /* Centra horizontalmente los elementos dentro de la cuadrícula */
+    background-color: black;
+    padding: 10px;
+  }
+  footer div h3{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  footer img {
+    width: 50px; /* Tamaño de los iconos */
+    height: 50px;
+  }
+  
+
+/*---pagina 1---*/
+
+    .logo-container {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente el contenido */
+        align-items: center; /* Centra verticalmente el contenido */
+        height: 100vh; /* Ajusta la altura del contenedor para ocupar toda la altura visible */
+        }
+        
+    .logo-container img {
+        width: 300px; /* Ancho deseado para la imagen */
+        height: 200px; /* Altura deseada para la imagen */
+    }
+    
+   
+
+/**--Contacto--**/
+
+.header nav{
+    background-position: center;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: rgb(255, 255, 255); 
+}
+
+.navbar-brand{
+    color:rgb(255, 255, 255)
+}
+
+.boton nav{
+    color: white;
+}
+.span navbar-toggler-icon{
+    color: white
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+
+
