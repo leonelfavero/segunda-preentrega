@@ -71,6 +71,7 @@ section h2 {
     .ejemplos {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }   
     
     /**aca esta la parte donde modifico el texto entre las imagenes de la paginas de ejemplo**/
